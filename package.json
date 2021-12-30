@@ -1,0 +1,16 @@
+{
+  "name": "api-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Min",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "jest": "^27.4.5",
+    "supertest": "^6.1.6"
+  }
+}
