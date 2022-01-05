@@ -5,10 +5,10 @@ const request = supertest(baseUrl);
 const USER_TOKEN = process.env.USER_ACCESS_TOKEN;
 
 const userInput = {
-    username: "phuongmin2001",
-    email: "min2001@gmail.com",
-    password: "min123@",
-    confirmPassword: "min123@"
+    username: "minnnnnnn2001",
+    email: "abcxyz@gmail.com",
+    password: "abcxyz@",
+    confirmPassword: "abcxyz@"
 }
 
 describe('ABOUT USER.', () => {
@@ -50,7 +50,6 @@ describe('ABOUT USER.', () => {
     describe('GET user', () => {
         it('should return a 200 status and user detail', async () => {
             const user = {
-                role: "user",
                 username: "minhphuong2000",
             }
             const response = await request.get('auth').set('Authorization', `Bearer ${USER_TOKEN}`);
@@ -63,17 +62,13 @@ describe('ABOUT USER.', () => {
     describe('UPDATE info of user', () => {
         it('should return a 200 status and info has been updated', async () => {
             const data = {
-                money: 1005
+                address: 'MD-HNNNN'
             }
-
-            const oldData = await request.get('auth').set('Authorization', `Bearer ${USER_TOKEN}`);
-            const total = oldData.body.user.accountBalance;
 
             const response = await request.put('auth').set('Authorization', `Bearer ${USER_TOKEN}`).send(data);
 
-            console.log(total + data.money);
             expect(response.statusCode).toBe(200);
-            expect(response.body.user.accountBalance).toBe(total + data.money);
+            expect(response.body.user).toEqual(expect.objectContaining(data));
         })
     });
 })
