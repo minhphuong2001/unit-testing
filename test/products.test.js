@@ -56,7 +56,7 @@ describe('ABOUT PRODUCTS.', () => {
                         "https://demo.uix.store/sober/wp-content/uploads/sites/2/2016/07/3-19.jpg",
                         "https://demo.uix.store/sober/wp-content/uploads/sites/2/2016/07/2-29.jpg"
                     ],
-                    price: 420,
+                    price: 360,
                     category: "60afe44c8841df28fc603318"
                 };
 
@@ -80,7 +80,7 @@ describe('ABOUT PRODUCTS.', () => {
 
         describe('if admin', () => {
             it('should return a message delete product successfully', async () => {
-                const productId = '60c25643b8927e3ab4aca8ef';
+                const productId = '61d5be3d4b730a001aea442b';
                 const response = await request.delete(`product/${productId}`).set('Authorization', `Bearer ${ADMIN_TOKEN}`);
                 
                 if (productId) {
