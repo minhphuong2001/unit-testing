@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-junit": "jest --ci --reporters=default --reporters=jest-junit"
   },
   "author": "Min",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
     "jest": "^27.4.5",
+    "jest-junit": "^13.0.0",
     "supertest": "^6.1.6"
   }
 }

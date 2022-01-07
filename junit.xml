@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="9" failures="1" errors="0" time="13.545">
+  <testsuite name="ABOUT PRODUCTS." errors="0" failures="0" skipped="0" timestamp="2022-01-07T17:21:04" time="5.448" tests="4">
+    <testcase classname="ABOUT PRODUCTS. given the product does not exists should return 404" name="ABOUT PRODUCTS. given the product does not exists should return 404" time="1.009">
+    </testcase>
+    <testcase classname="ABOUT PRODUCTS. GET product by id should return a 200 status and the product" name="ABOUT PRODUCTS. GET product by id should return a 200 status and the product" time="0.953">
+    </testcase>
+    <testcase classname="ABOUT PRODUCTS. CREATE a product if admin should return a 200 status and create the product" name="ABOUT PRODUCTS. CREATE a product if admin should return a 200 status and create the product" time="0.749">
+    </testcase>
+    <testcase classname="ABOUT PRODUCTS. DELETE product by id if admin should return a message delete product successfully" name="ABOUT PRODUCTS. DELETE product by id if admin should return a message delete product successfully" time="0.748">
+    </testcase>
+  </testsuite>
+  <testsuite name="ABOUT USER." errors="0" failures="1" skipped="0" timestamp="2022-01-07T17:21:04" time="6.991" tests="5">
+    <testcase classname="ABOUT USER. user register given the username and password are valid should return a message create account success" name="ABOUT USER. user register given the username and password are valid should return a message create account success" time="1.173">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Account successfully created&quot;
+Received: &quot;Email is taken&quot;
+    at Object.&lt;anonymous&gt; (F:\Kiem thu phan mem\Tren Lop\api-testing\test\user.test.js:20:47)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="ABOUT USER. user register if email already exists should return a message email already exists" name="ABOUT USER. user register if email already exists should return a message email already exists" time="0.978">
+    </testcase>
+    <testcase classname="ABOUT USER. user login should return a 200 status and show login successful" name="ABOUT USER. user login should return a 200 status and show login successful" time="0.783">
+    </testcase>
+    <testcase classname="ABOUT USER. GET user should return a 200 status and user detail" name="ABOUT USER. GET user should return a 200 status and user detail" time="0.766">
+    </testcase>
+    <testcase classname="ABOUT USER. UPDATE info of user should return a 200 status and info has been updated" name="ABOUT USER. UPDATE info of user should return a 200 status and info has been updated" time="1.094">
+    </testcase>
+  </testsuite>
+</testsuites>
