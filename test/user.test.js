@@ -5,10 +5,10 @@ const request = supertest(baseUrl);
 const USER_TOKEN = process.env.USER_ACCESS_TOKEN;
 
 const userInput = {
-    username: "minnnnnnn2001",
-    email: "abcxyz@gmail.com",
-    password: "abcxyz@",
-    confirmPassword: "abcxyz@"
+    username: "user123",
+    email: "user123@gmail.com",
+    password: "user1234@",
+    confirmPassword: "user1234@"
 }
 
 describe('ABOUT USER.', () => {

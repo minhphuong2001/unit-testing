@@ -31,12 +31,6 @@ describe('ABOUT PRODUCTS.', () => {
     });
 
     describe('CREATE a product', () => {
-        // describe('if not admin', () => {
-        //     it('should return a status: 401 Unauthorized', async () => {
-        //         const response = await request.post('product');
-        //         expect(response.statusCode).toBe(401);
-        //     })
-        // });
         
         describe('if admin', () => {
             it('should return a 200 status and create the product', async () => {
@@ -71,12 +65,6 @@ describe('ABOUT PRODUCTS.', () => {
     });
     
     describe('DELETE product by id', () => {
-        // describe('if not admin', () => {
-        //     it('should return a status: 401 Unauthorized', async () => {
-        //         const response = await request.post('product');
-        //         expect(response.statusCode).toBe(401);
-        //     })
-        // });
 
         describe('if admin', () => {
             it('should return a message delete product successfully', async () => {
