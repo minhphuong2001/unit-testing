@@ -6,9 +6,9 @@ const USER_TOKEN = process.env.USER_ACCESS_TOKEN;
 
 const userInput = {
     username: "user1234",
-    email: "user123@gmail.com",
-    password: "user1234@",
-    confirmPassword: "user1234@"
+    email: "user1234@gmail.com",
+    password: "user12344@",
+    confirmPassword: "user12344@"
 }
 
 describe('ABOUT USER.', () => {
